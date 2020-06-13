@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Collapse, Media, Card, Row, Col } from 'react-bootstrap'
+import { Collapse, Media, Card, Row, Col } from 'react-bootstrap'
 
 
 
@@ -9,10 +9,14 @@ class ItemDetails extends Component {
         open: false
     }
 
+    a = parseFloat(this.props.price);
+    b = parseFloat(this.props.pickupSavings)
+    c = this.a + this.b
+
     render() {
         return (
             <div >
-                <div className="item-details">
+                <div className="toggle-button">
                     <a
 
 
@@ -24,6 +28,7 @@ class ItemDetails extends Component {
 
                     </a>
                 </div>
+
 
                 <Collapse in={this.state.open}>
                     <div>
@@ -39,12 +44,12 @@ class ItemDetails extends Component {
                                     <Row className="show-grid">
 
                                         <Col md={6}>
-                                            <strong> {`$${this.props.price}`}</strong>
+                                            <strong> {`$${this.c}`}</strong>
                                             <br />
                                             <strong className="price-strike"> {`$${this.props.price}`} </strong>
                                         </Col>
 
-                                        <Col md={6}>
+                                        <Col md={6} className="text-right" >
                                             Qty: 1
                                             <br />
                                         </Col>

@@ -29,7 +29,7 @@ const PickupSavings = (props) => {
         </OverlayTrigger>
       </Col>
 
-      <Col style={styles.totalSavings} md={6}> {`$${props.price}`}</Col>
+      <Col style={styles.totalSavings} className="text-right" md={6}> {`$${props.price}`}</Col>
 
     </Row>
 

@@ -15,7 +15,7 @@ const EstimatedTotal = (props) => {
                 <h3>Estimated Total</h3>
             </Col>
 
-            <Col md={6}> <h3>{`$${props.price}`}</h3> </Col>
+            <Col md={6} className="text-right"> <h3>{`$${props.price}`}</h3> </Col>
 
         </Row>
 

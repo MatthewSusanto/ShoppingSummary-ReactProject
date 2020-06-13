@@ -15,7 +15,7 @@ const TaxesFees = (props) => {
                 Estimated taxes and fees
             </Col>
 
-            <Col md={6}> {`$${props.taxes}`}</Col>
+            <Col md={6} className="text-right"> {`$${props.taxes}`}</Col>
 
         </Row>
 

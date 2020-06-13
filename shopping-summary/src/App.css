@@ -14,25 +14,30 @@
   padding-bottom: 1.5em;
 }
 
-.item-details:hover{
+.toggle-button:hover{
   text-decoration: underline;
   cursor: pointer;
 }
-.item-details{
+
+.toggle-button{
   
   color:#0066CC;
-  padding-left: 1em;
+  padding: 1em;
 
 }
 
 
 .card{
   padding: 1em;
-  background-color: lightgray;
+  background-color: #ededed;
 
 }
 
 .price-strike {
   text-decoration-line: line-through;
   color: grey;
+}
+
+.btn-round {
+  margin-top: 1em;
 }
